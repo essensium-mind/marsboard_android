@@ -35,3 +35,4 @@ PRODUCT_MAKEFILES := \
   $(LOCAL_DIR)/hdmidongle_6dq.mk \
   $(LOCAL_DIR)/sabresd_6sx.mk \
   $(LOCAL_DIR)/sabreauto_6sx.mk \
+  $(LOCAL_DIR)/marsboard_6q.mk \
