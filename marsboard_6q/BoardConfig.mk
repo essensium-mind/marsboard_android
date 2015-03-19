@@ -95,10 +95,6 @@ IMX_CAMERA_HAL_V2 := true
 # define frame buffer count
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 
-ifeq ($(BUILD_TARGET_LOCATION),emmc)
-TARGET_BOOTLOADER_CONFIG := mx6q_marsboard_android_emmc_config
-else
-TARGET_BOOTLOADER_CONFIG := mx6q_marsboard_android_tf_config
-endif# BUILD_TARGET_LOCATION
-
-
+TARGET_BOOTLOADER_CONFIG := imx6q:marsboard_defconfig
+TARGET_KERNEL_DEFCONF := marsboard_defconfig
+TARGET_BOARD_DTS_CONFIG := imx6q:imx6q-marsboard.dtb
