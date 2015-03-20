@@ -98,3 +98,13 @@ NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 TARGET_BOOTLOADER_CONFIG := imx6q:marsboard_defconfig
 TARGET_KERNEL_DEFCONF := marsboard_defconfig
 TARGET_BOARD_DTS_CONFIG := imx6q:imx6q-marsboard.dtb
+
+BOARD_SEPOLICY_DIRS := \
+	device/fsl/sabresd_6dq/sepolicy
+
+BOARD_SEPOLICY_UNION := \
+	app.te \
+	file_contexts \
+	fs_use \
+	untrusted_app.te \
+	genfs_contexts
