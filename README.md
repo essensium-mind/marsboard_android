@@ -47,6 +47,10 @@ kernel and bootloader:
     git clone --single-branch -b kk4.4.3_2.0.0-ga_marsboard https://github.com/essensium-mind/marsboard_linux.git kernel_imx
     git clone --single-branch -b 2015.01_marsboard https://github.com/essensium-mind/marsboard_uboot.git bootable/bootloader/uboot-imx
 
+The following patch is needed to compile wpa\_supplicant:
+
+    patch -p1 -d external/wpa_supplicant_8 < device/fsl/wpa_supplicant.patch
+
 
 Building
 ---------
